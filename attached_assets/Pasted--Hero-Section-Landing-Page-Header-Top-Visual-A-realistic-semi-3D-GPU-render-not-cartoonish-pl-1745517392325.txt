@@ -1,0 +1,257 @@
+ Hero Section (Landing Page Header)
+Top Visual:
+
+A realistic semi-3D GPU render (not cartoonish), placed at an angle to appear as if it’s popping out of the screen.
+
+Background: subtle dark gradient (deep green/black), with blurred AI patterns or binary particles moving behind it.
+
+Floating "pulsing" particles on scroll (subtle animation to enhance modern look).
+
+Title & Tagline:
+
+Bold headline: “Rent, Train, Deploy — Decentralized AI Compute Starts Here”
+
+Subtext: “Instant access to affordable GPU power from real people, not clouds.”
+
+CTA Buttons:
+
+“Get Started” (client)
+
+“Become a Provider” (GPU owner)
+
+🧑‍💼 Authentication System (Modal + Page)
+Role-Based Signup/Login:
+
+Two options during registration: Client or Provider.
+
+Use of tab-switchable modal forms like LeetCode’s login.
+
+Minimalistic fields with validation and animations (input slide-in).
+
+Auth buttons with OAuth (Google, GitHub, etc.).
+
+🛍️ GPU Marketplace Page
+Sidebar Filters (left):
+
+GPU type (e.g., RTX 3080, A100, etc.)
+
+Memory (VRAM filter)
+
+Price/hour slider
+
+Provider “Online” toggle
+
+Sorting options (price, performance, rating)
+
+GPU Cards Grid (center):
+
+Card with:
+
+GPU name & image
+
+Specs (VRAM, cores, compute score)
+
+Availability: 🔴 Offline / 🟢 Online (pulsing dot)
+
+Ratings and reviews
+
+"Rent Now" button
+
+Top Bar (search + toggles):
+
+Search by GPU or provider
+
+Toggle between List/Grid view
+
+Clicking a card opens GPU profile modal/page:
+
+Detailed benchmarks
+
+Usage history
+
+Provider status stats (see below)
+
+Review section
+
+“Start Job” form
+
+🖥️ Provider Dashboard
+Sidebar Menu:
+
+My GPUs
+
+Job Requests
+
+Earnings
+
+Status Settings
+
+Logs
+
+Main Panel:
+
+Table of listed GPUs with:
+
+Toggle to go “Online”
+
+Edit button
+
+Usage analytics
+
+Weekly Active Stats modal (click on “Active” badge)
+
+Opens graph-style popup like GitHub contributions (see image you provided)
+
+Shows login frequency and total hours on platform
+
+Job Request Panel:
+
+Requests with specs and time estimates
+
+Accept/Deny with messaging
+
+Earnings Graph:
+
+Weekly/monthly earnings line graph
+
+Withdraw button
+
+👩‍💻 Client Dashboard
+Sidebar Menu:
+
+My Jobs
+
+Create Job
+
+Transaction History
+
+Saved GPUs
+
+Job Logs
+
+Job Creation Form:
+
+Upload model/code
+
+Choose runtime
+
+GPU selection dropdown
+
+Configure environment
+
+Estimate price calculation
+
+Job History:
+
+Job cards with:
+
+Status (Running / Completed / Failed)
+
+Cost
+
+Result download
+
+🖲️ Web Terminal Interface (Xterm.js)
+Terminal embedded inside a card layout
+
+File explorer on left (like VS Code)
+
+Tabs for shell, logs, and resource graph
+
+Real-time GPU usage graphs on the right
+
+Environment customization (CUDA, Python version, packages)
+
+💰 Payments & Escrow Page
+Fund Wallet (Stripe, Crypto, UPI, etc.)
+
+Escrow Status Bar:
+
+Shows job funding > provider hold > release upon completion
+
+Transaction History Table
+
+Receipts download (PDF)
+
+🔒 Security & Privacy UI
+Security Indicators:
+
+Lock icons showing data is encrypted
+
+“Secure Deletion Verified” badges post-job
+
+Privacy Agreement Modal:
+
+Pops before job start with checklist
+
+Container Visualization:
+
+2D sandbox showing job running inside isolated container
+
+Like a flowchart showing “You → Secure Runtime → Output”
+
+📱 Mobile Design
+Collapsible sidebar menus
+
+Marketplace switches to vertical cards
+
+Modal stack for login/profile/job
+
+Mobile terminal support (minimized version)
+
+Touch-friendly filtering and GPU toggling
+
+📊 Status Pop-up (Inspired by GitHub Contributions Graph)
+Triggered by clicking “Active” badge on provider card
+
+Graph shows:
+
+Daily site activity for last 30 days
+
+Total hours logged
+
+Sessions count
+
+Tooltip on hover: “Online for 5 hours on Apr 21”
+
+🧠 AI-Driven Recommendations (Optional Feature)
+Suggest GPUs based on:
+
+Past job specs
+
+Budget
+
+Preferred providers
+
+🧾 Footer Section
+About
+
+Docs (API, Usage Guides)
+
+Contact
+
+Careers
+
+Privacy Policy
+
+Discord/Community Link
+
+🧪 General Design Language
+Color Scheme:
+
+Deep greens, dark mode default, neon green/blue accents (NVIDIA feel)
+
+Typography:
+
+Modern mono-style for code elements (JetBrains Mono)
+
+Clean sans-serif for UI (Inter or IBM Plex Sans)
+
+UI Animations:
+
+Hover transitions on GPU cards
+
+Smooth sidebar collapses
+
+Modal pop-ins and button feedback
+
