@@ -32,6 +32,9 @@ function Router() {
       <Route path="/create-job" component={CreateJob} />
       <Route path="/gpu/:id" component={GpuDetail} />
       <Route path="/security" component={Security} />
+      <Route path="/how-it-works" component={HowItWorks} />
+      <Route path="/pricing" component={Pricing} />
+      <Route path="/docs" component={Docs} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
       <Route component={NotFound} />

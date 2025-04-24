@@ -42,18 +42,18 @@ const Navbar = () => {
             <Link href="/marketplace" className={`text-gray-300 hover:text-white transition ${location === '/marketplace' ? 'text-white' : ''}`}>
               Marketplace
             </Link>
-            <Link href="#how-it-works" className="text-gray-300 hover:text-white transition">
+            <Link href="/how-it-works" className={`text-gray-300 hover:text-white transition ${location === '/how-it-works' ? 'text-white' : ''}`}>
               How It Works
             </Link>
             <Link href="/security" className={`text-gray-300 hover:text-white transition ${location === '/security' ? 'text-white' : ''}`}>
               Security
             </Link>
-            <a href="#pricing" className="text-gray-300 hover:text-white transition">
+            <Link href="/pricing" className={`text-gray-300 hover:text-white transition ${location === '/pricing' ? 'text-white' : ''}`}>
               Pricing
-            </a>
-            <a href="#docs" className="text-gray-300 hover:text-white transition">
+            </Link>
+            <Link href="/docs" className={`text-gray-300 hover:text-white transition ${location === '/docs' ? 'text-white' : ''}`}>
               Docs
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-4">
@@ -128,30 +128,30 @@ const Navbar = () => {
               onClick={toggleMobileMenu}>
               Marketplace
             </Link>
-            <a 
-              href="#how-it-works" 
+            <Link 
+              href="/how-it-works" 
               className="text-xl text-gray-300 hover:text-white transition"
               onClick={toggleMobileMenu}>
               How It Works
-            </a>
+            </Link>
             <Link 
               href="/security" 
               className="text-xl text-gray-300 hover:text-white transition"
               onClick={toggleMobileMenu}>
               Security
             </Link>
-            <a 
-              href="#pricing" 
+            <Link 
+              href="/pricing" 
               className="text-xl text-gray-300 hover:text-white transition"
               onClick={toggleMobileMenu}>
               Pricing
-            </a>
-            <a 
-              href="#docs" 
+            </Link>
+            <Link 
+              href="/docs" 
               className="text-xl text-gray-300 hover:text-white transition"
               onClick={toggleMobileMenu}>
               Docs
-            </a>
+            </Link>
             {user ? (
               <>
                 {user.role === 'client' ? (
