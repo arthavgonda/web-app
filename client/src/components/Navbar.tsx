@@ -45,6 +45,9 @@ const Navbar = () => {
             <Link href="/how-it-works" className={`text-gray-300 hover:text-white transition ${location === '/how-it-works' ? 'text-white' : ''}`}>
               How It Works
             </Link>
+            <Link href="/features" className={`text-gray-300 hover:text-white transition ${location === '/features' ? 'text-white' : ''}`}>
+              Features
+            </Link>
             <Link href="/security" className={`text-gray-300 hover:text-white transition ${location === '/security' ? 'text-white' : ''}`}>
               Security
             </Link>
@@ -133,6 +136,12 @@ const Navbar = () => {
               className="text-xl text-gray-300 hover:text-white transition"
               onClick={toggleMobileMenu}>
               How It Works
+            </Link>
+            <Link 
+              href="/features" 
+              className="text-xl text-gray-300 hover:text-white transition"
+              onClick={toggleMobileMenu}>
+              Features
             </Link>
             <Link 
               href="/security" 

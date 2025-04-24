@@ -15,6 +15,7 @@ import Security from "@/pages/Security";
 import HowItWorks from "@/pages/HowItWorks";
 import Pricing from "@/pages/Pricing";
 import Docs from "@/pages/Docs";
+import Features from "@/pages/Features";
 import Register from "@/pages/auth/Register";
 import Login from "@/pages/auth/Login";
 import Navbar from "@/components/Navbar";
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/docs" component={Docs} />
+      <Route path="/features" component={Features} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
       <Route component={NotFound} />

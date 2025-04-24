@@ -1,0 +1,38 @@
+Reputation Score System
+Each provider and client has a dynamic reputation score based on completed jobs, feedback, on-time availability, and dispute history — helps build long-term trust.
+
+GPU Benchmark Verification
+Auto-run standardized benchmarks on provider GPUs during listing to validate specs (e.g., CUDA cores, memory bandwidth) and detect spoofing.
+
+Job Snapshot & Rollback
+Allows clients to checkpoint long-running jobs and resume from last snapshot — useful in case of provider failure or container timeout.
+
+Anomaly Detection & Fraud Prevention
+Use lightweight AI models to flag suspicious provider activity — like excessive container restarts, resource underutilization, or job output mismatches.
+
+Custom Docker Environments
+Clients can upload their own Dockerfiles or use templates — ensuring compatibility with specialized frameworks (e.g., PyTorch nightly, JAX, DeepSpeed).
+
+Energy Efficiency Mode
+Let providers toggle an eco-mode, favoring clients with low-intensity jobs — optimizing for heat, electricity use, and eco-conscious users.
+
+Interactive Metrics Dashboard
+Both clients and providers get real-time dashboards with logs, graphs, and alerts — GPU temp, memory, utilization, job runtime, etc.
+
+Dispute Resolution Escrow
+Smart contract–based dispute mechanism with third-party arbitrators. If a job fails or gets corrupted, payment is held until both parties agree or arbitration resolves it.
+
+Multi-GPU & Multi-Node Job Support
+For large jobs, allow clients to parallelize across multiple GPUs or providers with automatic job partitioning and result merging.
+
+Offline Availability Credit
+Providers get credits for declaring downtime in advance — encouraging honesty and planning, and preventing job disruptions.
+
+Job Template Marketplace
+Users can share or sell job configuration templates — e.g., "Stable Diffusion training", "BERT fine-tuning", etc. with environment + config bundled.
+
+Privacy Visualizer
+Show a real-time visualization of data flow, container runtime, and encryption stages — so users see exactly how secure their job is.
+
+Provider Hardware Wallet Support
+For crypto payouts, support hardware wallets (Ledger, Trezor) directly on payout screen — improving security of provider earnings.
