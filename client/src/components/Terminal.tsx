@@ -94,8 +94,8 @@ const Terminal = ({ jobId, initialOutput = [], isRunning = false }: TerminalProp
           <div className="flex flex-col h-[400px]">
             <div ref={terminalRef} className="terminal flex-grow p-4 overflow-y-auto">
               {output.map((line, index) => (
-                <div key={index} className={`terminal-line ${line.startsWith("$") ? "terminal-prompt" : ""}`}>
-                  {line.startsWith("$") ? line.substring(2) : line}
+                <div key={index} className={`terminal-line ${line && typeof line === 'string' && line.startsWith("$") ? "terminal-prompt" : ""}`}>
+                  {line && typeof line === 'string' && line.startsWith("$") ? line.substring(2) : line}
                 </div>
               ))}
             </div>

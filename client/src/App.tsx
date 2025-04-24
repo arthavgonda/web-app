@@ -11,6 +11,7 @@ import ProviderDashboard from "@/pages/ProviderDashboard";
 import ClientDashboard from "@/pages/ClientDashboard";
 import CreateJob from "@/pages/CreateJob";
 import GpuDetail from "@/pages/GpuDetail";
+import Security from "@/pages/Security";
 import Register from "@/pages/auth/Register";
 import Login from "@/pages/auth/Login";
 import Navbar from "@/components/Navbar";
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/client-dashboard" component={ClientDashboard} />
       <Route path="/create-job" component={CreateJob} />
       <Route path="/gpu/:id" component={GpuDetail} />
+      <Route path="/security" component={Security} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
       <Route component={NotFound} />
