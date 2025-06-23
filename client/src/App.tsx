@@ -47,7 +47,6 @@ function Router() {
 function App() {
   const [mounted, setMounted] = useState(false);
 
-  // Ensure components use client-side code only after hydration
   useEffect(() => {
     setMounted(true);
   }, []);
