@@ -7,27 +7,26 @@ export function cn(...inputs: ClassValue[]) {
 
 // Format currency
 export function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-IND', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'RUPEE',
     minimumFractionDigits: 2,
-    maximumFractionDigits: 2
+    maximumFractionDigits: 4
   }).format(amount);
 }
 
-// Format large numbers with commas
 export function formatNumber(num: number): string {
   return new Intl.NumberFormat('en-US').format(num);
 }
 
-// Generate an array of GPU manufacturers
+// an array of GPU manufacturers
 export const gpuManufacturers = [
   "NVIDIA",
   "AMD",
   "Intel"
 ];
 
-// Generate an array of popular GPU models
+// an array of popular GPU models
 export const gpuModels = [
   "RTX 4090",
   "RTX 4080",
@@ -50,21 +49,20 @@ export const gpuModels = [
   "Arc A750"
 ];
 
-// User role types
+// User role 
 export type UserRole = "client" | "provider";
 
-// GPU status type
+// GPU status 
 export type GpuStatus = "online" | "offline" | "busy";
 
-// Job status type
+// Job status 
 export type JobStatus = "pending" | "running" | "completed" | "failed";
 
-// Ensure a value is always between min and max
+//  value is always between min and max
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
 }
 
-// Convert bytes to a more readable format
 export function formatBytes(bytes: number, decimals = 2): string {
   if (bytes === 0) return '0 Bytes';
   
@@ -95,12 +93,10 @@ export function generateRandomId(length = 8): string {
   return Math.random().toString(36).substring(2, 2 + length);
 }
 
-// Check if a value is defined
 export function isDefined<T>(value: T | undefined | null): value is T {
   return value !== undefined && value !== null;
 }
 
-// Create a debounced function
 export function debounce<T extends (...args: any[]) => any>(
   func: T,
   wait: number
@@ -120,8 +116,6 @@ export function debounce<T extends (...args: any[]) => any>(
     timeout = setTimeout(later, wait);
   };
 }
-
-// Group an array by a specific key
 export function groupBy<T, K extends keyof any>(
   array: T[],
   getKey: (item: T) => K
